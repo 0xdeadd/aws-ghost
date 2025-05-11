@@ -1,0 +1,52 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:RunInstances",
+                "ec2:DescribeInstances",
+                "ec2:TerminateInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:CreateTags",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeInstanceStatus",
+                "ec2:DescribeAddresses",
+                "ec2:AssociateAddress",
+                "ec2:DisassociateAddress",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeImages"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:DeleteBucket",
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:DeleteObject",
+                "s3:ListBucket",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketVersioning",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+} 
