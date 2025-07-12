@@ -1,0 +1,67 @@
+# AWS credentials and sensitive files
+.aws/
+*.pem
+*.key
+credentials
+config
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js (if you add Node.js components later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if you add Python components later)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Terraform (if you add IaC later)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# CloudFormation (if you add CloudFormation later)
+*.template
+*.yaml
+*.yml
+!template.yaml
+!template.yml 
